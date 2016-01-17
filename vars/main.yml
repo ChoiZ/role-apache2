@@ -1,0 +1,18 @@
+---
+apache:
+    servername: mybox
+    apache_vhosts:
+        - {
+            docroot: /vagrant/www/mywebsite,
+            logdir: /vagrant/logs/mywebsite,
+            servername: mywebsite.com,
+            serveralias: www.mywebsite.com fr.mywebsite.com,
+            serveradmin: root@localhost
+        }
+        - {
+            docroot: /vagrant/www/myotherwebsite,
+            logdir: /vagrant/logs/myotherwebsite,
+            servername: myotherwebsite.com,
+            serveralias: www.myotherwebsite.com fr.myotherwebsite.com,
+            serveradmin: root@localhost
+        }
